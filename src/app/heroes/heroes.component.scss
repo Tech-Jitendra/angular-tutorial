@@ -1,0 +1,33 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #7d0fa5;
+$secondary-color: #7d0fa5;
+
+body {
+    font: 100% $font-stack;
+    color: $secondary-color;
+}
+
+.form-class {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: auto;
+    flex-wrap: wrap;
+}
+
+    .form-div {
+        display: flex;
+        margin: 10px 0px;
+    }
+
+.form-label {
+    width: 100%;
+    color: black;
+}
+
+.form-control {
+    color: $primary-color;
+    font-size: medium;
+    width: 200px;
+    cursor: pointer;
+}

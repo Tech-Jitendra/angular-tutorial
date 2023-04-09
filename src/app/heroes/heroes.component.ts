@@ -10,6 +10,9 @@ export class HeroesComponent {
   // hero = "Windstorm"
   hero: Hero = {
     id: 1,
-    name: "Windstorm"
+    name: "Windstorm",
+    email: "",
+    password: "",
+    confirmPassword: ""
   }
 }
