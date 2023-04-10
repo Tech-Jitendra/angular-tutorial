@@ -7,12 +7,18 @@ import { Hero } from './hero';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent {
-  // hero = "Windstorm"
-  hero: Hero = {
-    id: 1,
-    name: "Windstorm",
-    email: "",
-    password: "",
-    confirmPassword: ""
+
+  heroes = [
+    { id: 1, name: "jitendra", },
+    { id: 2, name: "react", },
+    { id: 3, name: "next", },
+    { id: 4, name: "angular", },
+    { id: 5, name: "learning", },
+    { id: 6, name: "with", },
+    { id: 7, name: "Windstorm", }
+  ]
+
+  handleData = (hero: any) => {
+    console.log("this is working", hero)
   }
 }
