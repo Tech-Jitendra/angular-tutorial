@@ -7,7 +7,7 @@ import { Hero } from './hero';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent {
-
+  selectedHero?: any;
   heroes = [
     { id: 1, name: "jitendra", },
     { id: 2, name: "react", },
@@ -19,6 +19,7 @@ export class HeroesComponent {
   ]
 
   handleData = (hero: any) => {
+    this.selectedHero = hero.name
     console.log("this is working", hero)
   }
 }

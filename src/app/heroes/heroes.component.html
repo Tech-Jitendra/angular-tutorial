@@ -1,6 +1,8 @@
-<h2>My Heroes</h2>
+<h2>My Hero is {{selectedHero}}</h2>
+
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
-        <button class="hero-button" (click)="handleData(hero)">{{hero.name}}</button>
+        <button class="hero-button" [class.active-button]="hero.name==selectedHero"
+            (click)="handleData(hero)">{{hero.name | uppercase }}</button>
     </li>
 </ul>
