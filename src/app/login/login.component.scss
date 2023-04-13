@@ -21,7 +21,21 @@ body {
     padding: 20px;
     box-sizing: border-box;
     margin: auto;
-    border-radius: 5px;
+    clip-path: polygon(calc(0% + 5px) calc(0% + 5px),
+            /* top left */
+            calc(100% - 5px) calc(0% + 5px),
+            /* top right */
+            calc(100% - 5px) calc(100% - 5px),
+            /* bottom right */
+            calc(0% + 5px) calc(100% - 5px)
+            /* bottom left */
+        );
+    transition: clip-path 1s linear;
+    border: solid 5px #FC5185;
+}
+
+.form-image-bg:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .form-div {
